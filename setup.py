@@ -25,6 +25,7 @@ setup(
      entry_points={
         'console_scripts': [
             'first_node = w_is_going_on.first_node:main',
+            'time_printer = w_is_going_on.time_printer:main', 
         ],
     },
 )
