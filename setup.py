@@ -5,7 +5,7 @@ package_name = 'w_is_going_on'
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
+    packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -22,8 +22,9 @@ setup(
             'pytest',
         ],
     },
-    entry_points={
+     entry_points={
         'console_scripts': [
+            'first_node = w_is_going_on.first_node:main',
         ],
     },
 )
