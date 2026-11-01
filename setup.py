@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'first_node = w_is_going_on.first_node:main',
             'time_printer = w_is_going_on.time_printer:main', 
+            'talker = w_is_going_on.talker:main',
+            'listener = w_is_going_on.listener:main',
         ],
     },
 )
